@@ -1770,8 +1770,11 @@ a {
 }
 
 @media (max-width: 767px) {
+
     .team .box {
         width: 300px;
+        position: relative;
+        right: -10%;
     }
         .team .box img {
             max-width: 80%;
@@ -1779,6 +1782,10 @@ a {
                 .team .box::before {
                     height: 360px;
                     width: 230px;
+                }
+                .team .box:hover::after {
+                    width: calc(100% - 70px);
+                    height: calc(100% - 20px);
                 }
     .events .dots {
         display: none;
